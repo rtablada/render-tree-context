@@ -1,8 +1,5 @@
 import type Owner from '@ember/owner';
-import * as EmberDebug from '@ember/debug';
 import Component from '@glimmer/component';
-import { getOnerror } from '@ember/-internals/error-handling';
-import { getOwner } from '@ember/owner';
 
 type ContextFactory<T> = (owner: Owner) => T;
 
