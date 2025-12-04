@@ -7,6 +7,8 @@ import {
   AppState,
   ProvideAppState,
 } from 'render-tree-context/contexts/app-state';
+import Component from '@glimmer/component';
+import type Owner from '@ember/owner';
 
 const myAppState = new AppState();
 myAppState.userName = 'App Template User';

@@ -11,6 +11,10 @@ if (macroCondition(isDevelopingApp())) {
 }
 
 export default class App extends Application {
+  constructor() {
+    super(...arguments);
+    window.emberApp = this;
+  }
   modulePrefix = config.modulePrefix;
   podModulePrefix = config.podModulePrefix;
   Resolver = Resolver.withModules(compatModules);
